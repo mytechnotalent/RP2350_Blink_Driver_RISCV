@@ -54,7 +54,7 @@ The sequential ordering means `t0` is ready before the `sw` needs it.
 When the processor encounters a branch instruction, it may not know the next PC until the execute stage.  If the branch is taken, instructions that were already fetched after the branch are incorrect and must be discarded — this is called a **pipeline flush**.
 
 ```asm
-  bnez  t1, .Delay_MS_Loop                      # branch until zero
+  bnez  t1, .Delay_MS_Loop                       # branch until zero
 ```
 
 If `t1` is not zero, the pipeline is flushed: the instruction after `bnez` that was already fetched is discarded, and the pipeline restarts at `.Delay_MS_Loop`.  For our tight delay loop (3,600 × ms iterations), this flush happens on every iteration except the last.

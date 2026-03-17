@@ -117,8 +117,8 @@ Used in every source file to load base addresses and register offsets:
 
 ```asm
   li    t0, XOSC_BASE                            # t0 = 0x40048000
-  li    t0, RESETS_RESET                          # t0 = 0x40020000
-  li    t0, SIO_GPIO_OUT_SET                      # t0 = 0xd0000018
+  li    t0, RESETS_RESET                         # t0 = 0x40020000
+  li    t0, SIO_GPIO_OUT_SET                     # t0 = 0xd0000018
 ```
 
 ### 2. `li` for Small Constants

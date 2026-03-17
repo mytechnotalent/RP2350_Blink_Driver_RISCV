@@ -79,7 +79,7 @@ In assembly and C, hexadecimal numbers are written with a `0x` prefix:
 Every memory-mapped address in our firmware is written in hex:
 
 ```asm
-  .equ XOSC_BASE,  0x40048000                   # crystal oscillator base
+  .equ XOSC_BASE,  0x40048000                    # crystal oscillator base
   .equ RESETS_BASE, 0x40020000                   # reset controller base
 ```
 

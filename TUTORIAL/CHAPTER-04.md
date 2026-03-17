@@ -90,7 +90,7 @@ RISC-V defines a separate set of **CSRs** for machine-mode control. Our firmware
 The `csrw` instruction writes a CSR:
 
 ```asm
-  csrw  mtvec, t0                               # set trap vector to t0
+  csrw  mtvec, t0                                # set trap vector to t0
 ```
 
 ## Register Usage in Our Firmware

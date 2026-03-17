@@ -140,9 +140,9 @@ This function demonstrates the standard read-modify-write pattern for APB regist
 
 ```
 li    t0, REGISTER_ADDRESS
-lw    t1, 0(t0)          # READ
-or/and/ori t1, ...       # MODIFY
-sw    t1, 0(t0)          # WRITE
+lw    t1, 0(t0)                                  # READ
+or/and/ori t1, ...                               # MODIFY
+sw    t1, 0(t0)                                  # WRITE
 ```
 
 Unlike the SIO block (which has atomic set/clear registers), APB peripherals require this three-step sequence.
